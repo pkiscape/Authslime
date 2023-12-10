@@ -124,4 +124,4 @@ After image creation, this information gets put into the local SQLite database.
 
 Here is a diagram of the flow:
 
-![diagram](etc/authslime.jpg)
+![diagram](etc/diagram.jpg)
