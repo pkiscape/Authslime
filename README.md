@@ -11,11 +11,11 @@ Creates an Authslime:
 
 According to the RNG, accessories will be chosen for the authslime (up to two). There are common, uncommon, and rare accessories. 
 
-**Common**: sunglasses, sunhat
-
-**Uncommon**: top hat, wizard hat, mustache
-
-**Rare**: robin hood hat, santa hat, crown, golden top hat, golden sunglasses
+| Rarity    | Item |
+| -------- | ------- |
+| Common   | sunglasses, sunhat    |
+| Uncommon | top hat, wizard hat, mustache     |
+| Rare     | robin hood hat, santa hat, crown, golden top hat, golden sunglasses    |
 
 ![Example Slime](etc/exampleslime.png)
 
