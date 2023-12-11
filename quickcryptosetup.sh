@@ -5,6 +5,7 @@
 # Create private key
 openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:2048 -out keys/privatekey.pem
 echo "Created keys/privatekey.pem"
+
 # Create public key
 openssl rsa -in keys/privatekey.pem -pubout -out keys/publickey.pem
 echo "Created keys/publickey.pem"
