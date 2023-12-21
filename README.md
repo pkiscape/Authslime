@@ -35,8 +35,8 @@ This tool performs many cryptographic actions(key wrapping, issuing X.509 Certif
 `keys/publickey.pem` - used to encrypt the wrapping key that wraps the authslime's private key
 `keys/privatekey.pem` (optional) if you wish to decrypt the authslime's private key
 
-1) Your Certificate authority keypair and certificate
-`ca/private/ca.key` - The private key used for signing the authslime certificates
+1) Your Certificate authority(CA) keypair and certificate
+`ca/private/ca.key` - The private key associated with your CA used for signing the authslime certificates
 `ca/certs/ca.pem` - The CA certificate
 
 (insert information about dependancies here)
@@ -96,7 +96,7 @@ PrivateKey(Assocaited with the AuthslimeCert)
 	2) Encrypt Slime Private Key with Symmetric Key = wrappedprivatekey
 	3) Encrypt Symmetric Key with Public Key = wrappedsymkey
 	4) Store wrappedsymkey and wrappedprivatekey (Also aad/tag/iv)
- To decrypt, use ```keys/publickey.pem``` to decrypt symmetric key. 
+ To decrypt, use ```keys/privatekey.pem``` to decrypt symmetric key. 
  Use symmetric key to decrypt wrappedprivatekey. This is shown in the function ```decrypt_test()``` in ```x50slime.py``` 
 
 After image creation, this information gets put into the local SQLite database. 
