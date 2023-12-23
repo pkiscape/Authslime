@@ -39,7 +39,7 @@ This tool performs many cryptographic actions(key wrapping, issuing X.509 Certif
 `ca/private/ca.key` - The private key associated with your CA used for signing the authslime certificates
 `ca/certs/ca.pem` - The CA certificate
 
-**If you don't care about this, and just want to test out the script, you can run ```quickcryptosetup.sh```. It is a bash script that creates the nessesary files.
+**If you don't care about this, and just want to test out the script, you can run ```quickcryptosetup.sh```. It is a bash script that creates the nessesary files.**
 
 ``` sh quickcryptosetup.sh```
 
