@@ -1,6 +1,6 @@
 # Authslime	
 
-A CLI tool that allows you to create cryptographic slime with fun attributes! It supports a local SQLite database which stores all information. 
+A CLI tool that allows you to create cryptographic slime with fun attributes! It supports a local SQLite database which stores information about each authslime. 
 
 Creates an Authslime:
  1. Creates Attributes of the Slime (ID, KeyID, Version, Name, Color, Template, and Accessories)
