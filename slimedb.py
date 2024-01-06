@@ -21,10 +21,10 @@ SlimeDB
 | Name              |        | PublicKey         |        
 | Color             |        | Certificate       |		  
 | Template          |        | WrappedSymKey     |
-| AuthslimeImage    |	     | IV				 |
-+-------------------+		 | AAD	             |
-        					 | Tag		         |
-         ^					 +-------------------+
+| AuthslimeImage    |	     | IV	         |
++-------------------+        | AAD	         |
+        		     | Tag		 |
+         ^		     +-------------------+
          |
 +-------------------+  
 |    Accessories    |
