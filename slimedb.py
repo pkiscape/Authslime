@@ -13,7 +13,7 @@ import sqlite3
 SlimeDB
 
 +-------------------+        +-------------------+		  
-|       Slime       |        |       Keys	     |
+|       Slime       |        |       Keys	 |
 +-------------------+        +-------------------+		 
 | Slime ID (PK)     |        |                   |        
 | KeyID (FK)        | -----> | KeyID (PK)        | 
@@ -32,8 +32,6 @@ SlimeDB
 | SlimeID (FK)      | 
 | AccessoryName     |
 +-------------------+ 
-
-
 
 """
 
