@@ -51,7 +51,7 @@ def main():
 
 	for index, authslime in enumerate(loop_number, start=1):
 	
-		slime_time = create_authslime(verbose=verbose, rare=rare, images=images, no_db_images=no_db_images,index=index,loop_number=loop_number)
+		slime_time = create_authslime(verbose=verbose, rare=rare, images=images, index=index, loop_number=loop_number)
 
 		#End timer for total create time
 		slime_time_list.append(slime_time)
@@ -174,7 +174,7 @@ class Authslime():
 
 		return chosen
 
-def create_authslime(verbose,rare,images,no_db_images,index,loop_number):
+def create_authslime(verbose,rare,images,index,loop_number):
 
 	'''
 	Creates an Authslime:
