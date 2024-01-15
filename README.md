@@ -49,36 +49,42 @@ For the rest of the dependancies, you can run:
 
 
 ## Usage
+```
+usage: authslime.py [-h] -n NUMBER [-g] [-v] [-r] [-i] [-ndi] [-s SLEEP]
 
-    usage: authslime.py [-h] -n NUMBER [-g] [-v] [-r] [-i]
-      
-    options:
-      
-      -n NUMBER, --number NUMBER (required)
-                            Define how many authslime you would like to create
-      -g, --graph           Pass this if you would like to view a graph
-      -v, --verbose         Print authslime information and creation times
-      -r, --rare            Rare Detector: prints message when a rare item/color is created
-      -i, --images          Prints the authslime image in the img/ directory
-	    -h, --help            Show this help message and exit
+Authslime CLI tool
+
+options:
+  -h, --help            show this help message and exit
+  -n NUMBER, --number NUMBER
+                        Define how many authslime you would like to create
+  -g, --graph           Pass this if you would like to view a graph
+  -v, --verbose         Print authslime information and creation times
+  -r, --rare            Rare Detector: prints information when a rare occurance happens
+  -i, --images          Prints the authslime image in the img/ directory
+  -ndi, --no-db-images  Omits the authslime image in the sqlite database
+  -s SLEEP, --sleep SLEEP
+                        Add static backoff (sleep timer) in seconds to wait after creation of each authslime
+
+```
 
 ## Examples
 
-1) Create 10 authslime, displaying a graph to show their creation times.
+1) Create 10 authslime, displaying a graph to show their creation times. Print Authlimes to img/ directory
 
-    `python3 authslime.py -n 10 -g`
+    `python3 authslime.py -n 10 -g -i`
 
-2) Create 15 authslime, being verbose to see them get created
+2) Create 15 authslime, being verbose to see them get created. Wait one second after each authslime creation.
 
-    `python3 authslime.py -n 15 -v`
+    `python3 authslime.py -n 15 -v -s 1`
 
 3) Create 20 authslime, printing when there's a rare item,  while showing a graph
 
     `python3 authslime.py -n 20 -r -g`
 
-4) Create 100 authslimes and Enable all!
+4) Create 100 authslimes with a graph, verbose, rare detector, add images to img/ and omit images from DB.
 
-    `python3 authslime.py -n 100 -g -v -r -i`
+    `python3 authslime.py -n 100 -g -v -r -i -ndi`
 
 ## Design
 

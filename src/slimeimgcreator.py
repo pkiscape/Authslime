@@ -13,12 +13,12 @@ Slime image details:
 768 x 768
 '''
 
-def drawslime(slimeid,version,name,color,template,accessories,publickey_digest,images):
+def drawslime(uid,version,name,color,template,accessories,publickey_digest,images):
 	'''
 	Creates a slime image based on its attributes
 	'''
 
-	slimeid = str(slimeid)
+	uid = str(uid)
 
 	bigfont = ImageFont.truetype("etc/LiberationMono-Regular.ttf", 34)
 	mediumfont = ImageFont.truetype("etc/LiberationMono-Regular.ttf", 16)
@@ -106,7 +106,7 @@ def drawslime(slimeid,version,name,color,template,accessories,publickey_digest,i
 
 	#Write text
 	text_select.text((392, 620), name, fill=(0, 0, 0),font=bigfont,anchor="mm")
-	text_select.text((392, 648), slimeid, fill=(0, 0, 0),font=mediumfont,anchor="mm")
+	text_select.text((392, 648), uid, fill=(0, 0, 0),font=mediumfont,anchor="mm")
 	text_select.text((392, 668), "SHA256 Digest of Public Key", fill=(0, 0, 0),font=smallfont,anchor="mm")
 	text_select.text((392, 682), publickey_digest, fill=(0, 0, 0),font=tinyfont,anchor="mm")
 	
@@ -124,7 +124,7 @@ def drawslime(slimeid,version,name,color,template,accessories,publickey_digest,i
 
 	#Save Authslime to JPG
 	if images:
-		authslime_image	= slime_image.convert('RGB').save("img/"+slimeid+'.jpg', "JPEG") 
+		authslime_image	= slime_image.convert('RGB').save("img/"+uid+'.jpg', "JPEG") 
 	
 	#Save Authslime to in-memory Buffer
 	buffer = io.BytesIO()
