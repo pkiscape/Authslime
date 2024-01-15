@@ -50,7 +50,7 @@ For the rest of the dependancies, you can run:
 
 ## Usage
 ```
-usage: authslime.py [-h] -n NUMBER [-g] [-v] [-r] [-i] [-ndi] [-s SLEEP]
+usage: authslime.py [-h] -n NUMBER [-g] [-v] [-r] [-i] [-s SLEEP]
 
 Authslime CLI tool
 
@@ -62,7 +62,6 @@ options:
   -v, --verbose         Print authslime information and creation times
   -r, --rare            Rare Detector: prints information when a rare occurance happens
   -i, --images          Prints the authslime image in the img/ directory
-  -ndi, --no-db-images  Omits the authslime image in the sqlite database
   -s SLEEP, --sleep SLEEP
                         Add static backoff (sleep timer) in seconds to wait after creation of each authslime
 
