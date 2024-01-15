@@ -31,7 +31,7 @@ def main():
 	argparse_main.add_argument("-v","--verbose", action="store_true", help="Print authslime information and creation times",required=False)
 	argparse_main.add_argument("-r","--rare", action="store_true", help="Rare Detector: prints information when a rare occurance happens",required=False)
 	argparse_main.add_argument("-i","--images", action="store_true", help="Prints the authslime image in the img/ directory",required=False)
-	argparse_main.add_argument("-ndi","--no-db-images", action="store_true", help="Omits the authslime image in the sqlite database",required=False)
+	#argparse_main.add_argument("-ndi","--no-db-images", action="store_true", help="Omits the authslime image in the sqlite database",required=False)
 	argparse_main.add_argument("-s","--sleep", type=float, help="Add static backoff (sleep timer) in seconds to wait after creation of each authslime",required=False)
 
 	args = argparse_main.parse_args()
@@ -40,7 +40,7 @@ def main():
 	verbose = args.verbose if args.verbose is not None else False
 	rare = args.rare if args.rare is not None else False
 	images = args.images if args.images is not None else False
-	no_db_images = args.no_db_images if args.no_db_images is not None else False
+	#no_db_images = args.no_db_images if args.no_db_images is not None else False
 	sleep = args.sleep if args.sleep is not None else False
 
 	loop_number=range(args.number)
